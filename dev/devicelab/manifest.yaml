@@ -282,6 +282,12 @@ tasks:
     required_agent_capabilities: ["mac/android"]
     timeout_in_minutes: 30
 
+  ffi_integration_test_android:
+    description: >
+      Runs end-to-end `dart:ffi` tests on Android.
+    stage: devicelab
+    required_agent_capabilities: ["mac/android"]
+
   flutter_view__start_up:
     description: >
       Verifies that Flutter View can be used from an Android project.
@@ -495,6 +501,12 @@ tasks:
     stage: devicelab_ios
     required_agent_capabilities: ["mac/ios"]
     timeout_in_minutes: 30
+
+  ffi_integration_test_ios:
+    description: >
+      Runs end-to-end `dart:ffi` tests on iOS.
+    stage: devicelab_ios
+    required_agent_capabilities: ["mac/ios"]
 
   flutter_view_ios__start_up:
     description: >
